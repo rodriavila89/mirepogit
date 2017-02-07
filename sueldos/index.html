@@ -1,0 +1,106 @@
+  <!DOCTYPE html>
+  <html>
+  <head>
+  	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  	    <!-- Bootstrap Core CSS -->
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="dist/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="dist/css/sueldos.min.css" rel="stylesheet">
+  	<title>Calculadora de sueldos</title>
+  </head>
+  <body>
+  	<div class="container">
+  		<div class="row">
+  				<div class="col-lg-12">
+	  					<h1 class="page-header">Calculadora de sueldos</h1>
+	  					<p>
+	  					Powered by 
+                    <a href="http://www.apertura.com"><img src="http://www.apertura.com/export/sites/revistaap/arte/v2/logo.png_2017700195.png" width=100/></a>
+	  					</p>
+              <!--TODO: Llenar con la revista que lo pide, supongo que Apertura? -->
+  			</div>
+  		</div>
+  		<div class="row">
+  			<div class="col-lg-6" id="cuadroform">
+  				<div class="panel panel-default">
+  					<div class="panel-heading">
+  						Calculá tu sueldo
+  					</div>
+  					<div class="panel-body">
+  						<div class="col-lg-12">
+	  						<form role="form">
+	  							<div class="form-group">
+	  								<label>Industria</label>
+	  								<select class="form-control" id="industria">
+	  								</select>
+	  							</div>
+	  							<div class="form-group">
+	  								<label>Posición</label>
+	  								<select class="form-control" id="posicion"></select>
+	  							</div>
+	  							<div class="form-group">
+	  								<label>Tamaño de la empresa</label>
+	  								<select class="form-control" id="tamaño">
+	  									<option value="pequeña">Pequeña</option>
+	  									<option value="mediana">Mediana</option>
+	  									<option value="grande">Grande</option>
+	  								</select>
+	  							</div>
+	  							<div class="form-group">
+	  								<label>Región</label>
+	  								<select class="form-control" id="region">
+	  									<option value="BUENOS AIRES / CABA">BUENOS AIRES / CABA</option>
+	  									<option value="CUYO">CUYO</option>
+	  									<option value="CENTRO">CENTRO</option>
+	  									<option value="PATAGONIA">PATAGONIA</option>
+	  									<option value="NOA / NEA">NOA / NEA</option>
+	  								</select>
+	  							</div>
+	  							<div class="form-group">
+	  								<label>Completá cuánto ganás (opcional)</label>
+	  								<input type="text" class="form-control" id="sueldo">
+	  							</div>
+	  							<div class="form-group">
+	  								<button id="calcular" type="button" class="btn btn-success">Calcular</button>
+	  							</div>
+	  						</form>
+  						</div>
+  					</div>
+  				</div>
+  			</div>
+  			<div class="col-lg-6 col-xs-12 no-display" id="resultado">
+  				<div class="panel panel-default">
+  					<div class="panel-heading">
+  						Resultado
+  					</div>
+  					<div class="panel-body">
+		            	<div id="valoressueldo" class="col-lg-8 col-xs-8 no-display">
+		              		<div><strong id="porcentaje"></strong></div>
+		    			<div>
+		    				<strong>Sueldo máximo:</strong> $<span id="maximo"></span>	
+		    			</div>
+		   				<div>
+		   					<strong>Sueldo medio:</strong> $<span id="medio"></span>	
+		   				</div>
+		   				<div>	
+	    					<strong>Sueldo mínimo:</strong> $<span id="minimo"></span>
+	    				</div>
+		            	</div>
+		           	 	<div id='noresultados' class="no-display">No hay datos con las opciones seleccionadas</div>
+		           		<div class="col-lg-4 col-xs-4" id="emoji"></div>
+		           		<div id="target"></div>
+		           		<button id="buscarDeNuevo" type="button" class="btn btn-success">Buscar otro sueldo</button>
+  					</div>
+  				</div>
+
+  			</div>
+  		</div>
+  	</div>
+  </body>
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="dist/pruebaBusqueda.min.js"></script>
+  <script src="dist/posiciones.min.js"></script>
+  <script src="dist/sueldos.min.js"></script>
+  </html>

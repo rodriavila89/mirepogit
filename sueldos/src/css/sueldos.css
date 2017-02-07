@@ -1,0 +1,31 @@
+body {
+	background-color: #fff;
+}
+
+label, .page-header{
+	color:gray;
+}
+
+.panel-body{
+	background-color: #f2f2f2 !important;
+}
+
+.panel-heading{
+	background-color: #ff343d !important; color: #FFFFFF !important;
+}
+
+.no-display{
+	display:none;
+}
+
+#emoji{
+}
+
+.fitbox{
+	margin-top:-7%;
+	height:9em;
+	margin-bottom:-2em;
+}
+
+#buscarDeNuevo{
+}

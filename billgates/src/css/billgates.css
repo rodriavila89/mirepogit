@@ -1,0 +1,39 @@
+	body{
+		background-color:#fcfaf9;
+	}
+	.page-header{
+		color:gray;
+	}
+
+	label{
+		color:#e1d8d8
+	}
+
+	.panel-body{
+		background-color: #f2f2f2 !important;
+	}
+	.panel-heading{
+		background-color: #366a75 !important;
+		color: #f3eae2 !important;
+	}
+	.fondo-bill{
+
+		background: linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ), url("bill.jpg") no-repeat;
+    	background-size: cover;
+    	background-clip: border-box;
+    	height:14em;
+	}
+
+	.no-display{
+		display:none;
+	}
+	#calcular{
+		float:right;
+	}
+	.whitef{
+		margin-top: 0.8em;
+		color:white;
+	}

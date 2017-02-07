@@ -1,0 +1,1 @@
+Para hacer la minificacion y correr el jshint, basicamente tiren un npm install en la carpeta y despues grunt y deberia andar.
