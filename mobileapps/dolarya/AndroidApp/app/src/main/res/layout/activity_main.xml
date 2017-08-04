@@ -1,0 +1,113 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:spiritconsultingllc="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/footer_fragment">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:orientation="horizontal">
+
+            <!--<RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="#54a5b6">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/hipotecario" />
+            </RelativeLayout>-->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_weight="1"
+                android:background="#cbe4e9">
+
+                <com.cronista.dolarya.helpers.CustomTextView
+                    android:id="@+id/last_update_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Última a las"
+                    android:textSize="15sp"
+                    android:textColor="#366a75"
+                    spiritconsultingllc:customFont="Roboto-Light.ttf"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp" />
+
+                <com.cronista.dolarya.helpers.CustomTextView
+                    android:id="@+id/last_update_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="16sp"
+                    android:textColor="#366a75"
+                    spiritconsultingllc:customFont="Roboto-Black.ttf"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/last_update_label"
+                    android:layout_toEndOf="@+id/last_update_label"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView7"
+                    android:src="@drawable/relojito"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/last_update_value"
+                    android:layout_toEndOf="@+id/last_update_value"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/listView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/linearLayout"
+            android:divider="@null"
+            android:dividerHeight="0dp"></ListView>
+    </RelativeLayout>
+
+    <fragment
+        android:id="@+id/configuration_fragment"
+        android:name="com.cronista.dolarya.activities.ConfigurationFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        tools:layout="@layout/fragment_configuration" />
+
+    <!--<fragment
+        android:id="@+id/footer_fragment"
+        android:name="com.cronista.dolarya.activities.FooterFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        tools:layout="@layout/fragment_footer" />-->
+</RelativeLayout>

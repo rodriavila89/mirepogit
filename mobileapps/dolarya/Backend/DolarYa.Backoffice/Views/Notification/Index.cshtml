@@ -1,0 +1,36 @@
+﻿@using DolarYa.Business.Enum
+@model List<Notification>
+@{
+    ViewBag.Title = "Notificaciones";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="row mb20">
+    <div class="form-group">
+        <div class="col-md-12">
+            <a class="btn btn-default pull-right" href="@Url.Action("Send")"><span class="glyphicon glyphicon-plus"></span> Nueva notificación</a>
+            <a class="btn btn-default pull-right" href="@Url.Action("SendAutomatic", new{ notificationType = NotificationType.Hourly })"><span class="glyphicon glyphicon-plus"></span> Nueva horaria</a>
+            <a class="btn btn-default pull-right" href="@Url.Action("SendAutomatic", new { notificationType = NotificationType.OpenMarket })"><span class="glyphicon glyphicon-plus"></span> Nueva apertura</a>
+            <a class="btn btn-default pull-right" href="@Url.Action("SendAutomatic", new { notificationType = NotificationType.CloseMarket })"><span class="glyphicon glyphicon-plus"></span> Nueva cierre</a>
+        </div>
+    </div>
+</div>
+
+<table class="table table-striped table-bordered table-hover">
+    <thead>
+        <tr>
+            <th>Fecha</th>
+            <th>Usuario</th>
+            <th>Contenido</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.CreatedAt.GetValueOrDefault().ToString("dd/MM/yyyy hh:mm")</td>
+                <td>Admin</td>
+                <td>@item.Content</td>
+            </tr>
+        }
+    </tbody>
+</table>

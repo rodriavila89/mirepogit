@@ -1,0 +1,309 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:spiritconsultingllc="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.cronista.dolarya.activities.AfipEstimationActivity">
+    <!-- Dummy item to prevent AutoCompleteTextView from receiving focus -->
+    <LinearLayout
+        android:layout_width="0px"
+        android:layout_height="0px"
+        android:focusable="true"
+        android:focusableInTouchMode="true" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/footer_fragment">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/estimacion" />
+
+        <com.cronista.dolarya.helpers.CustomTextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/imageView2"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_toEndOf="@+id/imageView2"
+            android:layout_toRightOf="@+id/imageView2"
+            android:text="Estimar compra AFIP"
+            android:textColor="#366a75"
+            android:textSize="22sp"
+            spiritconsultingllc:customFont="Roboto-Regular.ttf" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/imageView2"
+            android:layout_marginTop="15dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:src="@drawable/menu_separator" />
+
+        <com.cronista.dolarya.helpers.CustomTextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_alignLeft="@+id/imageView2"
+            android:layout_alignStart="@+id/imageView2"
+            android:layout_below="@+id/imageView3"
+            android:layout_marginTop="15dp"
+            android:text="Ingreso neto declarado\npromedio de los\núltimos 12 meses"
+            android:textColor="#366a75"
+            android:textSize="14sp"
+            spiritconsultingllc:customFont="Roboto-Regular.ttf" />
+
+        <EditText
+            android:id="@+id/converter_amount_to_change"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/textView"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp"
+            android:background="#cbe4e9"
+            android:gravity="center"
+            android:hint="0"
+            android:inputType="number"
+            android:nextFocusLeft="@id/converter_amount_to_change"
+            android:nextFocusUp="@id/converter_amount_to_change"
+            android:textAlignment="center"
+            android:textColor="#366a75" />
+
+        <RelativeLayout
+            android:id="@+id/frameLayout"
+            android:paddingBottom="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/converter_amount_to_change"
+            android:layout_alignLeft="@+id/textView"
+            android:layout_alignRight="@+id/converter_amount_to_change"
+            android:layout_alignStart="@+id/textView"
+            android:layout_below="@+id/textView"
+            android:layout_marginTop="12dp"
+            android:background="#54a5b6">
+
+
+            <com.cronista.dolarya.helpers.CustomTextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:text="Monto estimado para la compra"
+                android:textColor="#ffffff"
+                android:textSize="16sp"
+                spiritconsultingllc:customFont="Roboto-Bold.ttf" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_below="@+id/textView4"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:src="@drawable/separator_white" />
+
+
+            <com.cronista.dolarya.helpers.CustomTextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView5"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:text="El cálculo es sobre la base de la fórmula difundida por la AFIP. Puede diferir con las autorizaciones finales entregadas por el organismo."
+                android:textColor="#f1f9fc"
+                android:textSize="11sp"
+                spiritconsultingllc:customFont="Roboto-Bold.ttf" />
+
+            <LinearLayout
+                android:layout_width="120dp"
+                android:layout_height="60dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignTop="@+id/editText3"
+                android:layout_marginLeft="15dp"
+                android:background="#cbe4e9"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:textAlignment="center">
+
+
+                <com.cronista.dolarya.helpers.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="AR$"
+                    android:textColor="#366a75"
+                    android:textSize="16sp"
+                    spiritconsultingllc:customFont="Roboto-Regular.ttf" />
+
+                <com.cronista.dolarya.helpers.CustomTextView
+                    android:id="@+id/estimacion_pesos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1900"
+                    android:textColor="#366a75"
+                    android:textSize="22sp"
+                    spiritconsultingllc:customFont="Roboto-Regular.ttf" />
+            </LinearLayout>
+
+            <com.cronista.dolarya.helpers.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_alignTop="@+id/editText3"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="="
+                android:textColor="#ffffff"
+                android:textSize="30sp"
+                spiritconsultingllc:customFont="Roboto-Regular.ttf" />
+
+            <LinearLayout
+                android:id="@+id/editText3"
+                android:layout_width="120dp"
+                android:layout_height="60dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/textView5"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="12dp"
+                android:background="#cbe4e9"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:textAlignment="center">
+
+
+                <com.cronista.dolarya.helpers.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="US$"
+                    android:textColor="#366a75"
+                    android:textSize="16sp"
+                    spiritconsultingllc:customFont="Roboto-Regular.ttf" />
+
+                <com.cronista.dolarya.helpers.CustomTextView
+                    android:id="@+id/estimacion_dolares"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="200"
+                    android:textColor="#366a75"
+                    android:textSize="22sp"
+                    spiritconsultingllc:customFont="Roboto-Regular.ttf" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <com.cronista.dolarya.helpers.CustomTextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:maxWidth="220dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/frameLayout"
+            android:layout_alignStart="@+id/frameLayout"
+            android:layout_below="@+id/frameLayout"
+            android:layout_marginTop="15dp"
+            android:text="Percepción Resolución General \nAFIP 3583/1 por retiro anticipado"
+            android:textColor="#366a75"
+            android:textSize="14sp"
+            spiritconsultingllc:customFont="Roboto-Regular.ttf" />
+
+        <LinearLayout
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/frameLayout"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="12dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:textAlignment="center">
+
+
+            <com.cronista.dolarya.helpers.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AR$"
+                android:textColor="#366a75"
+                android:textSize="14sp"
+                spiritconsultingllc:customFont="Roboto-Regular.ttf" />
+
+            <com.cronista.dolarya.helpers.CustomTextView
+                android:id="@+id/estimacion_percepcion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="380"
+                android:textColor="#366a75"
+                android:textSize="18sp"
+                spiritconsultingllc:customFont="Roboto-Regular.ttf" />
+
+            <com.cronista.dolarya.helpers.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text=" (*)"
+                android:textColor="#366a75"
+                android:textSize="14sp"
+                spiritconsultingllc:customFont="Roboto-Regular.ttf" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView2"
+            android:layout_marginTop="15dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:src="@drawable/menu_separator" />
+
+
+        <com.cronista.dolarya.helpers.CustomTextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/frameLayout"
+            android:layout_alignLeft="@+id/textView2"
+            android:layout_alignRight="@+id/frameLayout"
+            android:layout_alignStart="@+id/textView2"
+            android:layout_below="@+id/imageView4"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:text="(*) La percepción del 20% se paga en pesos al momento de retirar las divisas en efectivo"
+            android:textColor="#366a75"
+            android:textSize="11sp"
+            spiritconsultingllc:customFont="Roboto-Regular.ttf" />
+
+    </RelativeLayout>
+
+    <fragment
+        android:id="@+id/configuration_fragment"
+        android:name="com.cronista.dolarya.activities.ConfigurationFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        tools:layout="@layout/fragment_configuration" />
+
+    <!--<fragment
+        android:id="@+id/footer_fragment"
+        android:name="com.cronista.dolarya.activities.FooterFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        tools:layout="@layout/fragment_footer" />-->
+</RelativeLayout>

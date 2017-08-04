@@ -1,0 +1,40 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:spiritconsultingllc="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_currency_converter_row"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#366a75"
+    android:orientation="horizontal">
+
+    <com.cronista.dolarya.helpers.CustomTextView
+        android:id="@+id/item_currency_converter_name"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:text="Dolar Uruguayo extra largo"
+        android:textAlignment="center"
+        android:textColor="#f1f9fc"
+        android:textSize="17sp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        spiritconsultingllc:customFont="Roboto-Regular.ttf" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="-20dp"
+        android:layout_marginRight="-20dp"
+        android:src="@drawable/converter_separator_vertical" />
+
+    <com.cronista.dolarya.helpers.CustomTextView
+        android:id="@+id/item_currency_converter_value"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="555"
+        android:textAlignment="center"
+        android:textColor="#f1f9fc"
+        android:textSize="22sp"
+        spiritconsultingllc:customFont="Roboto-Regular.ttf" />
+
+</LinearLayout>

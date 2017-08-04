@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">DólarYa</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="title_activity_configuration">configuration</string>
+    <string name="title_activity_currency_converter">CurrencyConverter</string>
+    <string name="title_activity_afip_estimation">AfipEstimation</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+</resources>

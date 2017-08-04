@@ -1,0 +1,7 @@
+﻿@if (!string.IsNullOrEmpty(ViewBag.ErrorMessage))
+{
+    <div class="alert alert-warning">
+        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+        @ViewBag.ErrorMessage
+    </div>
+}

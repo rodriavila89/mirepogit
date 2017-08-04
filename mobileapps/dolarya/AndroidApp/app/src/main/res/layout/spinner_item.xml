@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.cronista.dolarya.helpers.CustomTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:spiritconsultingllc="http://schemas.android.com/apk/res-auto"
+    android:id="@android:id/text1"
+    style="?android:attr/spinnerItemStyle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:ellipsize="marquee"
+    android:gravity="center"
+    android:hint="AR$"
+    android:singleLine="true"
+    android:textAlignment="center"
+    android:textColor="#2a6478"
+    android:textSize="16sp"
+    spiritconsultingllc:customFont="Roboto-Regular.ttf" />

@@ -1,0 +1,115 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:spiritconsultingllc="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.cronista.dolarya.activities.CurrencyConverterActivity">
+    <!-- Dummy item to prevent AutoCompleteTextView from receiving focus -->
+    <LinearLayout
+        android:layout_width="0px"
+        android:layout_height="0px"
+        android:focusable="true"
+        android:focusableInTouchMode="true" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/footer_fragment">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/calculadora" />
+
+        <com.cronista.dolarya.helpers.CustomTextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/imageView2"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_toEndOf="@+id/imageView2"
+            android:layout_toRightOf="@+id/imageView2"
+            android:text="Conversor"
+            android:textColor="#366a75"
+            android:textSize="22sp"
+            spiritconsultingllc:customFont="Roboto-Regular.ttf" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignLeft="@+id/imageView2"
+            android:layout_alignStart="@+id/imageView2"
+            android:layout_below="@+id/imageView2"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:background="#f1f9fc"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/currency_spinner"
+                android:layout_width="130dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textAlignment="center" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="-20dp"
+                android:layout_marginRight="-20dp"
+                android:src="@drawable/converter_separator_vertical_dark" />
+
+            <EditText
+                android:id="@+id/converter_amount_to_change"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:hint="0"
+                android:inputType="number"
+                android:nextFocusLeft="@id/converter_amount_to_change"
+                android:nextFocusUp="@id/converter_amount_to_change"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+
+        <ListView
+            android:id="@+id/currency_converter_list"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="#366a75"
+            android:layout_alignLeft="@+id/linearLayout2"
+            android:layout_alignStart="@+id/linearLayout2"
+            android:layout_below="@+id/linearLayout2"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:showDividers="middle"
+            android:dividerHeight="1dp"></ListView>
+
+    </RelativeLayout>
+
+    <fragment
+        android:id="@+id/configuration_fragment"
+        android:name="com.cronista.dolarya.activities.ConfigurationFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        tools:layout="@layout/fragment_configuration" />
+
+    <!--<fragment
+        android:id="@+id/footer_fragment"
+        android:name="com.cronista.dolarya.activities.FooterFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        tools:layout="@layout/fragment_footer" />-->
+</RelativeLayout>

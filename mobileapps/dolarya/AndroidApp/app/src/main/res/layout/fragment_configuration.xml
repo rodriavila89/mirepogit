@@ -1,0 +1,271 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:spiritconsultingllc="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cronista.dolarya.activities.ConfigurationFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#cbe4e9"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:id="@+id/layout_rates"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/clickable_menu_row"
+            android:clickable="true">
+
+            <ImageView
+                android:id="@+id/icon_cotizaciones"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/clickable_menu_rates" />
+
+            <com.cronista.dolarya.helpers.CustomTextView
+                android:id="@+id/text_cotizaciones"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@+id/icon_cotizaciones"
+                android:layout_toRightOf="@+id/icon_cotizaciones"
+                android:text="Cotizaciones"
+                android:textColor="@drawable/clickable_menu_text"
+                android:textSize="18sp"
+                spiritconsultingllc:customFont="Roboto-Light.ttf" />
+
+            <ImageView
+                android:id="@+id/arrow_cotizaciones"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/clickable_menu_arrow" />
+
+        </RelativeLayout>
+
+
+        <!--<RelativeLayout
+            android:id="@+id/layout_estimation"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:clickable="true"
+            android:background="@drawable/clickable_menu_row">
+
+            <ImageView
+                android:id="@+id/icon_afip_estimation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/clickable_menu_estimation" />
+
+            <com.cronista.dolarya.helpers.CustomTextView
+                android:id="@+id/text_afip_estimation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/icon_afip_estimation"
+                android:layout_toRightOf="@+id/icon_afip_estimation"
+                android:text="Estimar compra AFIP"
+                android:textColor="@drawable/clickable_menu_text"
+                android:textSize="18sp"
+                spiritconsultingllc:customFont="Roboto-Light.ttf"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp" />
+
+            <ImageView
+                android:id="@+id/arrow_afip_estimation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/clickable_menu_arrow" />
+
+        </RelativeLayout>-->
+
+        <RelativeLayout
+            android:id="@+id/layout_converter"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/clickable_menu_row"
+            android:clickable="true">
+
+            <ImageView
+                android:id="@+id/icon_converter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/clickable_menu_converter" />
+
+            <com.cronista.dolarya.helpers.CustomTextView
+                android:id="@+id/text_converter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@+id/icon_converter"
+                android:layout_toRightOf="@+id/icon_converter"
+                android:text="Conversor"
+                android:textColor="@drawable/clickable_menu_text"
+                android:textSize="18sp"
+                spiritconsultingllc:customFont="Roboto-Light.ttf" />
+
+            <ImageView
+                android:id="@+id/arrow_converter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/clickable_menu_arrow" />
+
+        </RelativeLayout>
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:src="@drawable/menu_separator" />
+
+        <com.cronista.dolarya.helpers.CustomTextView
+            android:id="@+id/text_alerts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:text="Alertas"
+            android:textColor="#497984"
+            android:textSize="18sp"
+            spiritconsultingllc:customFont="Roboto-Light.ttf" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:clickable="true"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp">
+
+            <com.cronista.dolarya.helpers.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="Apertura y cierre del mercado"
+                android:textColor="#2a6478"
+                android:textSize="16sp"
+                spiritconsultingllc:customFont="Roboto-Light.ttf" />
+
+            <Switch
+                android:id="@+id/switch_apertura_cierre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/switch_bg"
+                android:checked="true"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:switchMinWidth="0dp"
+                android:textOff=""
+                android:textOn=""
+                android:textSize="5sp"
+                android:thumb="@drawable/switch_thumb"
+                android:thumbTextPadding="9dp"
+                android:track="@drawable/switch_track" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:clickable="true"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp">
+
+            <com.cronista.dolarya.helpers.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="Cada una hora"
+                android:textColor="#2a6478"
+                android:textSize="16sp"
+                spiritconsultingllc:customFont="Roboto-Light.ttf" />
+
+            <Switch
+                android:id="@+id/switch_cada_hora"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/switch_bg"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:switchMinWidth="0dp"
+                android:textOff=""
+                android:textOn=""
+                android:textSize="5sp"
+                android:thumb="@drawable/switch_thumb"
+                android:thumbTextPadding="9dp"
+                android:track="@drawable/switch_track" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/device_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|left"
+        android:text="Small Text"
+        android:textColor="#9ccbd6"
+        android:textSize="7dp"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/registration_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:text="Small Text"
+        android:textColor="#9ccbd6"
+        android:textSize="7dp"
+        android:visibility="gone" />
+</FrameLayout>

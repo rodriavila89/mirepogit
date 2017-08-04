@@ -1,0 +1,829 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2120AA9D1BD074A5000B2BC1 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2120AA9C1BD074A5000B2BC1 /* Launch Screen.storyboard */; };
+		2120AA9F1BD07574000B2BC1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2120AA9E1BD07574000B2BC1 /* Images.xcassets */; };
+		2120AAA61BD08254000B2BC1 /* WindowsAzureMobileServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2120AAA51BD08254000B2BC1 /* WindowsAzureMobileServices.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		2120AAAB1BD192E4000B2BC1 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2120AAAA1BD192E4000B2BC1 /* Date.swift */; };
+		2120AAAE1BD19621000B2BC1 /* MobileServiceHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2120AAAD1BD19621000B2BC1 /* MobileServiceHelper.swift */; };
+		2120AAB11BD19FA0000B2BC1 /* APIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2120AAB01BD19FA0000B2BC1 /* APIHandler.swift */; };
+		2120AAB31BD1A539000B2BC1 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2120AAB21BD1A539000B2BC1 /* JSON.swift */; };
+		2120AABA1BD1BCD5000B2BC1 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2120AAB81BD1BCD5000B2BC1 /* Model.xcdatamodeld */; };
+		2120AB161BD20B2C000B2BC1 /* Configuration+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2120AB121BD20B2C000B2BC1 /* Configuration+CoreDataProperties.swift */; };
+		2120AB171BD20B2C000B2BC1 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2120AB131BD20B2C000B2BC1 /* Configuration.swift */; };
+		2120AB181BD20B2C000B2BC1 /* CurrencyRate+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2120AB141BD20B2C000B2BC1 /* CurrencyRate+CoreDataProperties.swift */; };
+		2120AB191BD20B2C000B2BC1 /* CurrencyRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2120AB151BD20B2C000B2BC1 /* CurrencyRate.swift */; };
+		212802CD1BF3E54B00FD108F /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 212802CA1BF3E53D00FD108F /* Charts.framework */; };
+		212802CE1BF3E54B00FD108F /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 212802CA1BF3E53D00FD108F /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		212802D21BF40E9C00FD108F /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212802D11BF40E9C00FD108F /* Common.swift */; };
+		213415FA1BD7173D00284B33 /* ConfigurationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213415F91BD7173D00284B33 /* ConfigurationController.swift */; };
+		213415FC1BD718CC00284B33 /* AfipEstimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213415FB1BD718CC00284B33 /* AfipEstimationController.swift */; };
+		213415FE1BD718FD00284B33 /* CurrencyConverterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213415FD1BD718FD00284B33 /* CurrencyConverterController.swift */; };
+		213416001BD7196600284B33 /* MenuTransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213415FF1BD7196600284B33 /* MenuTransitionManager.swift */; };
+		213416021BD82BDF00284B33 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213416011BD82BDF00284B33 /* NavigationController.swift */; };
+		213416081BD9AF4700284B33 /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 213416031BD9AF4700284B33 /* Roboto-Black.ttf */; };
+		213416091BD9AF4700284B33 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 213416041BD9AF4700284B33 /* Roboto-Bold.ttf */; };
+		2134160A1BD9AF4700284B33 /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 213416051BD9AF4700284B33 /* Roboto-Light.ttf */; };
+		2134160B1BD9AF4700284B33 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 213416061BD9AF4700284B33 /* Roboto-Regular.ttf */; };
+		2134160C1BD9AF4700284B33 /* Ubuntu-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 213416071BD9AF4700284B33 /* Ubuntu-Light.ttf */; };
+		214A673E1BFAABEB00B702B0 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 214A673D1BFAABEB00B702B0 /* NotificationCenter.framework */; };
+		214A67411BFAABEB00B702B0 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214A67401BFAABEB00B702B0 /* TodayViewController.swift */; };
+		214A67441BFAABEB00B702B0 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 214A67421BFAABEB00B702B0 /* MainInterface.storyboard */; };
+		214A67481BFAABEB00B702B0 /* DolarYaWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 214A673B1BFAABEB00B702B0 /* DolarYaWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		214A67511BFAB10D00B702B0 /* WidgetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214A67501BFAB10D00B702B0 /* WidgetViewController.swift */; };
+		214A67531BFAB5E100B702B0 /* DolarYaContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214A67521BFAB5E100B702B0 /* DolarYaContext.swift */; };
+		214A67541BFABF1700B702B0 /* WindowsAzureMobileServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2120AAA51BD08254000B2BC1 /* WindowsAzureMobileServices.framework */; };
+		214A67551BFABF7600B702B0 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2120AAB21BD1A539000B2BC1 /* JSON.swift */; };
+		214A67571BFAC0D900B702B0 /* UnmanagedCurrencyRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215F649E1BDEF15800FEFDBF /* UnmanagedCurrencyRate.swift */; };
+		214A675A1BFACDAF00B702B0 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2120AAB81BD1BCD5000B2BC1 /* Model.xcdatamodeld */; };
+		214A675E1BFAD3F500B702B0 /* CurrencyRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2120AB151BD20B2C000B2BC1 /* CurrencyRate.swift */; };
+		214A675F1BFAD3F900B702B0 /* CurrencyRate+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2120AB141BD20B2C000B2BC1 /* CurrencyRate+CoreDataProperties.swift */; };
+		214D89FD1BCEF3890039C19F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214D89FC1BCEF3890039C19F /* AppDelegate.swift */; };
+		214D89FF1BCEF3890039C19F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214D89FE1BCEF3890039C19F /* MainViewController.swift */; };
+		214D8A021BCEF3890039C19F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 214D8A001BCEF3890039C19F /* Main.storyboard */; };
+		215F43891BFA3A23001DAA74 /* splash.png in Resources */ = {isa = PBXBuildFile; fileRef = 215F43881BFA3A23001DAA74 /* splash.png */; };
+		215F649B1BDB07FD00FEFDBF /* ConevrterViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215F649A1BDB07FD00FEFDBF /* ConevrterViewCell.swift */; };
+		215F649F1BDEF15800FEFDBF /* UnmanagedCurrencyRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215F649E1BDEF15800FEFDBF /* UnmanagedCurrencyRate.swift */; };
+		215F64A11BDEF6ED00FEFDBF /* CurrencyRateViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215F64A01BDEF6ED00FEFDBF /* CurrencyRateViewCell.swift */; };
+		217760A31BFEA723003CDBDB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 217760A21BFEA723003CDBDB /* GoogleService-Info.plist */; };
+		21D43C911BFAE09800A61B21 /* WidgetCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D43C901BFAE09800A61B21 /* WidgetCustomCell.swift */; };
+		21F4188D1BFD3AAE0077CBC4 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 21F4188C1BFD3AAE0077CBC4 /* libz.tbd */; };
+		21F418901BFD3AE80077CBC4 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21F4188F1BFD3AE80077CBC4 /* AdSupport.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		212802C91BF3E53D00FD108F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 212802C41BF3E53C00FD108F /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5BA8EC401A9D14DC00CE82E1;
+			remoteInfo = Charts;
+		};
+		212802CB1BF3E53D00FD108F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 212802C41BF3E53C00FD108F /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A52C5C371BAC5CA400594CDD;
+			remoteInfo = ChartsTV;
+		};
+		212802CF1BF3E54C00FD108F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 212802C41BF3E53C00FD108F /* Charts.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 5BA8EC3F1A9D14DC00CE82E1;
+			remoteInfo = Charts;
+		};
+		214A67461BFAABEB00B702B0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 214D89EF1BCEF3890039C19F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 214A673A1BFAABEB00B702B0;
+			remoteInfo = DolarYaWidget;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		212802921BE4132C00FD108F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				212802CE1BF3E54B00FD108F /* Charts.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		214A674D1BFAABEB00B702B0 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				214A67481BFAABEB00B702B0 /* DolarYaWidget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2120AA9C1BD074A5000B2BC1 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		2120AA9E1BD07574000B2BC1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		2120AAA51BD08254000B2BC1 /* WindowsAzureMobileServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WindowsAzureMobileServices.framework; sourceTree = "<group>"; };
+		2120AAA71BD08443000B2BC1 /* dolarya-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "dolarya-Bridging-Header.h"; sourceTree = "<group>"; };
+		2120AAAA1BD192E4000B2BC1 /* Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		2120AAAD1BD19621000B2BC1 /* MobileServiceHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MobileServiceHelper.swift; sourceTree = "<group>"; };
+		2120AAB01BD19FA0000B2BC1 /* APIHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIHandler.swift; sourceTree = "<group>"; };
+		2120AAB21BD1A539000B2BC1 /* JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
+		2120AAB91BD1BCD5000B2BC1 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		2120AB121BD20B2C000B2BC1 /* Configuration+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Configuration+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		2120AB131BD20B2C000B2BC1 /* Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		2120AB141BD20B2C000B2BC1 /* CurrencyRate+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CurrencyRate+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		2120AB151BD20B2C000B2BC1 /* CurrencyRate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyRate.swift; sourceTree = "<group>"; };
+		212802C41BF3E53C00FD108F /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = ChartsProject/Charts.xcodeproj; sourceTree = "<group>"; };
+		212802D11BF40E9C00FD108F /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		213415F91BD7173D00284B33 /* ConfigurationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigurationController.swift; sourceTree = "<group>"; };
+		213415FB1BD718CC00284B33 /* AfipEstimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AfipEstimationController.swift; sourceTree = "<group>"; };
+		213415FD1BD718FD00284B33 /* CurrencyConverterController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyConverterController.swift; sourceTree = "<group>"; };
+		213415FF1BD7196600284B33 /* MenuTransitionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTransitionManager.swift; sourceTree = "<group>"; };
+		213416011BD82BDF00284B33 /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		213416031BD9AF4700284B33 /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Black.ttf"; sourceTree = "<group>"; };
+		213416041BD9AF4700284B33 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		213416051BD9AF4700284B33 /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
+		213416061BD9AF4700284B33 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		213416071BD9AF4700284B33 /* Ubuntu-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Light.ttf"; sourceTree = "<group>"; };
+		214A673B1BFAABEB00B702B0 /* DolarYaWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = DolarYaWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		214A673D1BFAABEB00B702B0 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		214A67401BFAABEB00B702B0 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		214A67431BFAABEB00B702B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		214A67451BFAABEB00B702B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		214A674E1BFAB00800B702B0 /* dolarya.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = dolarya.entitlements; sourceTree = "<group>"; };
+		214A674F1BFAB03000B702B0 /* DolarYaWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = DolarYaWidget.entitlements; sourceTree = "<group>"; };
+		214A67501BFAB10D00B702B0 /* WidgetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WidgetViewController.swift; sourceTree = "<group>"; };
+		214A67521BFAB5E100B702B0 /* DolarYaContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DolarYaContext.swift; sourceTree = "<group>"; };
+		214D89F71BCEF3890039C19F /* DolarYa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DolarYa.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		214D89FB1BCEF3890039C19F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		214D89FC1BCEF3890039C19F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		214D89FE1BCEF3890039C19F /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = dolarya/MainViewController.swift; sourceTree = "<group>"; };
+		214D8A011BCEF3890039C19F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		215F43881BFA3A23001DAA74 /* splash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash.png; sourceTree = "<group>"; };
+		215F649A1BDB07FD00FEFDBF /* ConevrterViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConevrterViewCell.swift; sourceTree = "<group>"; };
+		215F649E1BDEF15800FEFDBF /* UnmanagedCurrencyRate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnmanagedCurrencyRate.swift; sourceTree = "<group>"; };
+		215F64A01BDEF6ED00FEFDBF /* CurrencyRateViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyRateViewCell.swift; sourceTree = "<group>"; };
+		217760A21BFEA723003CDBDB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		21D43C901BFAE09800A61B21 /* WidgetCustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WidgetCustomCell.swift; sourceTree = "<group>"; };
+		21F4188C1BFD3AAE0077CBC4 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		21F4188F1BFD3AE80077CBC4 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		643351A5A2FFA99F8BEC18AF /* Pods-DolarYa.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DolarYa.release.xcconfig"; path = "Pods/Target Support Files/Pods-DolarYa/Pods-DolarYa.release.xcconfig"; sourceTree = "<group>"; };
+		AE2759CD9B45EBCC551477A0 /* Pods-DolarYa.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DolarYa.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DolarYa/Pods-DolarYa.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		214A67381BFAABEB00B702B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				214A67541BFABF1700B702B0 /* WindowsAzureMobileServices.framework in Frameworks */,
+				214A673E1BFAABEB00B702B0 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		214D89F41BCEF3890039C19F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21F418901BFD3AE80077CBC4 /* AdSupport.framework in Frameworks */,
+				21F4188D1BFD3AAE0077CBC4 /* libz.tbd in Frameworks */,
+				2120AAA61BD08254000B2BC1 /* WindowsAzureMobileServices.framework in Frameworks */,
+				212802CD1BF3E54B00FD108F /* Charts.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2120AAAC1BD195EF000B2BC1 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				2120AAAD1BD19621000B2BC1 /* MobileServiceHelper.swift */,
+				2120AAB01BD19FA0000B2BC1 /* APIHandler.swift */,
+				2120AAB21BD1A539000B2BC1 /* JSON.swift */,
+				212802D11BF40E9C00FD108F /* Common.swift */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		2120AAAF1BD19681000B2BC1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				215F649A1BDB07FD00FEFDBF /* ConevrterViewCell.swift */,
+				215F649E1BDEF15800FEFDBF /* UnmanagedCurrencyRate.swift */,
+				215F64A01BDEF6ED00FEFDBF /* CurrencyRateViewCell.swift */,
+				214A67521BFAB5E100B702B0 /* DolarYaContext.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		2120AAB41BD1BC86000B2BC1 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				2120AB121BD20B2C000B2BC1 /* Configuration+CoreDataProperties.swift */,
+				2120AB131BD20B2C000B2BC1 /* Configuration.swift */,
+				2120AB141BD20B2C000B2BC1 /* CurrencyRate+CoreDataProperties.swift */,
+				2120AB151BD20B2C000B2BC1 /* CurrencyRate.swift */,
+				2120AAB81BD1BCD5000B2BC1 /* Model.xcdatamodeld */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		212802C51BF3E53C00FD108F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				212802CA1BF3E53D00FD108F /* Charts.framework */,
+				212802CC1BF3E53D00FD108F /* ChartsTV.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		213415F81BD716FA00284B33 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				213416011BD82BDF00284B33 /* NavigationController.swift */,
+				214D89FE1BCEF3890039C19F /* MainViewController.swift */,
+				213415F91BD7173D00284B33 /* ConfigurationController.swift */,
+				213415FB1BD718CC00284B33 /* AfipEstimationController.swift */,
+				213415FD1BD718FD00284B33 /* CurrencyConverterController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		214A673C1BFAABEB00B702B0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				21F4188F1BFD3AE80077CBC4 /* AdSupport.framework */,
+				21F4188C1BFD3AAE0077CBC4 /* libz.tbd */,
+				214A673D1BFAABEB00B702B0 /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		214A673F1BFAABEB00B702B0 /* DolarYaWidget */ = {
+			isa = PBXGroup;
+			children = (
+				214A674F1BFAB03000B702B0 /* DolarYaWidget.entitlements */,
+				214A67401BFAABEB00B702B0 /* TodayViewController.swift */,
+				214A67421BFAABEB00B702B0 /* MainInterface.storyboard */,
+				214A67451BFAABEB00B702B0 /* Info.plist */,
+				214A67501BFAB10D00B702B0 /* WidgetViewController.swift */,
+				21D43C901BFAE09800A61B21 /* WidgetCustomCell.swift */,
+			);
+			path = DolarYaWidget;
+			sourceTree = "<group>";
+		};
+		214D89EE1BCEF3890039C19F = {
+			isa = PBXGroup;
+			children = (
+				217760A21BFEA723003CDBDB /* GoogleService-Info.plist */,
+				213415F81BD716FA00284B33 /* Controllers */,
+				2120AAB41BD1BC86000B2BC1 /* Data */,
+				2120AAAF1BD19681000B2BC1 /* Models */,
+				2120AAAC1BD195EF000B2BC1 /* Helpers */,
+				2120AAA71BD08443000B2BC1 /* dolarya-Bridging-Header.h */,
+				2120AA9C1BD074A5000B2BC1 /* Launch Screen.storyboard */,
+				214D89F91BCEF3890039C19F /* dolarya */,
+				214A673F1BFAABEB00B702B0 /* DolarYaWidget */,
+				214A673C1BFAABEB00B702B0 /* Frameworks */,
+				214D89F81BCEF3890039C19F /* Products */,
+				212802C41BF3E53C00FD108F /* Charts.xcodeproj */,
+				2120AAA51BD08254000B2BC1 /* WindowsAzureMobileServices.framework */,
+				2799E9EB6765AE636B3C1200 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		214D89F81BCEF3890039C19F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				214D89F71BCEF3890039C19F /* DolarYa.app */,
+				214A673B1BFAABEB00B702B0 /* DolarYaWidget.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		214D89F91BCEF3890039C19F /* dolarya */ = {
+			isa = PBXGroup;
+			children = (
+				214A674E1BFAB00800B702B0 /* dolarya.entitlements */,
+				214D89FC1BCEF3890039C19F /* AppDelegate.swift */,
+				214D8A001BCEF3890039C19F /* Main.storyboard */,
+				2120AA9E1BD07574000B2BC1 /* Images.xcassets */,
+				214D89FB1BCEF3890039C19F /* Info.plist */,
+				214D89FA1BCEF3890039C19F /* Supporting Files */,
+				2120AAAA1BD192E4000B2BC1 /* Date.swift */,
+				213415FF1BD7196600284B33 /* MenuTransitionManager.swift */,
+			);
+			path = dolarya;
+			sourceTree = "<group>";
+		};
+		214D89FA1BCEF3890039C19F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				213416031BD9AF4700284B33 /* Roboto-Black.ttf */,
+				213416041BD9AF4700284B33 /* Roboto-Bold.ttf */,
+				213416051BD9AF4700284B33 /* Roboto-Light.ttf */,
+				213416061BD9AF4700284B33 /* Roboto-Regular.ttf */,
+				213416071BD9AF4700284B33 /* Ubuntu-Light.ttf */,
+				215F43881BFA3A23001DAA74 /* splash.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2799E9EB6765AE636B3C1200 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AE2759CD9B45EBCC551477A0 /* Pods-DolarYa.debug.xcconfig */,
+				643351A5A2FFA99F8BEC18AF /* Pods-DolarYa.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		214A673A1BFAABEB00B702B0 /* DolarYaWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 214A674C1BFAABEB00B702B0 /* Build configuration list for PBXNativeTarget "DolarYaWidget" */;
+			buildPhases = (
+				214A67371BFAABEB00B702B0 /* Sources */,
+				214A67381BFAABEB00B702B0 /* Frameworks */,
+				214A67391BFAABEB00B702B0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DolarYaWidget;
+			productName = DolarYaWidget;
+			productReference = 214A673B1BFAABEB00B702B0 /* DolarYaWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		214D89F61BCEF3890039C19F /* DolarYa */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 214D8A161BCEF3890039C19F /* Build configuration list for PBXNativeTarget "DolarYa" */;
+			buildPhases = (
+				36BE615DA534B04FF8C476FB /* Check Pods Manifest.lock */,
+				214D89F31BCEF3890039C19F /* Sources */,
+				214D89F41BCEF3890039C19F /* Frameworks */,
+				214D89F51BCEF3890039C19F /* Resources */,
+				212802921BE4132C00FD108F /* Embed Frameworks */,
+				214A674D1BFAABEB00B702B0 /* Embed App Extensions */,
+				108FC31B3D8918FAD11BFB8B /* Embed Pods Frameworks */,
+				C1D882BE4603174162E3388E /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				212802D01BF3E54C00FD108F /* PBXTargetDependency */,
+				214A67471BFAABEB00B702B0 /* PBXTargetDependency */,
+			);
+			name = DolarYa;
+			productName = dolarya;
+			productReference = 214D89F71BCEF3890039C19F /* DolarYa.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		214D89EF1BCEF3890039C19F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "El Cronista";
+				TargetAttributes = {
+					214A673A1BFAABEB00B702B0 = {
+						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = X2ERJVV548;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					214D89F61BCEF3890039C19F = {
+						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = X2ERJVV548;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 214D89F21BCEF3890039C19F /* Build configuration list for PBXProject "DolarYa" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 214D89EE1BCEF3890039C19F;
+			productRefGroup = 214D89F81BCEF3890039C19F /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 212802C51BF3E53C00FD108F /* Products */;
+					ProjectRef = 212802C41BF3E53C00FD108F /* Charts.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				214D89F61BCEF3890039C19F /* DolarYa */,
+				214A673A1BFAABEB00B702B0 /* DolarYaWidget */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		212802CA1BF3E53D00FD108F /* Charts.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Charts.framework;
+			remoteRef = 212802C91BF3E53D00FD108F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		212802CC1BF3E53D00FD108F /* ChartsTV.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ChartsTV.framework;
+			remoteRef = 212802CB1BF3E53D00FD108F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		214A67391BFAABEB00B702B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				214A67441BFAABEB00B702B0 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		214D89F51BCEF3890039C19F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2120AA9D1BD074A5000B2BC1 /* Launch Screen.storyboard in Resources */,
+				2134160B1BD9AF4700284B33 /* Roboto-Regular.ttf in Resources */,
+				213416091BD9AF4700284B33 /* Roboto-Bold.ttf in Resources */,
+				213416081BD9AF4700284B33 /* Roboto-Black.ttf in Resources */,
+				2134160A1BD9AF4700284B33 /* Roboto-Light.ttf in Resources */,
+				2120AA9F1BD07574000B2BC1 /* Images.xcassets in Resources */,
+				2134160C1BD9AF4700284B33 /* Ubuntu-Light.ttf in Resources */,
+				217760A31BFEA723003CDBDB /* GoogleService-Info.plist in Resources */,
+				215F43891BFA3A23001DAA74 /* splash.png in Resources */,
+				214D8A021BCEF3890039C19F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		108FC31B3D8918FAD11BFB8B /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DolarYa/Pods-DolarYa-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		36BE615DA534B04FF8C476FB /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C1D882BE4603174162E3388E /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DolarYa/Pods-DolarYa-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		214A67371BFAABEB00B702B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				214A67511BFAB10D00B702B0 /* WidgetViewController.swift in Sources */,
+				214A675E1BFAD3F500B702B0 /* CurrencyRate.swift in Sources */,
+				214A675F1BFAD3F900B702B0 /* CurrencyRate+CoreDataProperties.swift in Sources */,
+				214A67411BFAABEB00B702B0 /* TodayViewController.swift in Sources */,
+				214A67571BFAC0D900B702B0 /* UnmanagedCurrencyRate.swift in Sources */,
+				214A67531BFAB5E100B702B0 /* DolarYaContext.swift in Sources */,
+				214A67551BFABF7600B702B0 /* JSON.swift in Sources */,
+				21D43C911BFAE09800A61B21 /* WidgetCustomCell.swift in Sources */,
+				214A675A1BFACDAF00B702B0 /* Model.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		214D89F31BCEF3890039C19F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				213415FA1BD7173D00284B33 /* ConfigurationController.swift in Sources */,
+				2120AAAE1BD19621000B2BC1 /* MobileServiceHelper.swift in Sources */,
+				2120AAB31BD1A539000B2BC1 /* JSON.swift in Sources */,
+				213415FC1BD718CC00284B33 /* AfipEstimationController.swift in Sources */,
+				2120AB161BD20B2C000B2BC1 /* Configuration+CoreDataProperties.swift in Sources */,
+				213415FE1BD718FD00284B33 /* CurrencyConverterController.swift in Sources */,
+				214D89FF1BCEF3890039C19F /* MainViewController.swift in Sources */,
+				215F649F1BDEF15800FEFDBF /* UnmanagedCurrencyRate.swift in Sources */,
+				212802D21BF40E9C00FD108F /* Common.swift in Sources */,
+				213416001BD7196600284B33 /* MenuTransitionManager.swift in Sources */,
+				215F649B1BDB07FD00FEFDBF /* ConevrterViewCell.swift in Sources */,
+				2120AB191BD20B2C000B2BC1 /* CurrencyRate.swift in Sources */,
+				213416021BD82BDF00284B33 /* NavigationController.swift in Sources */,
+				215F64A11BDEF6ED00FEFDBF /* CurrencyRateViewCell.swift in Sources */,
+				2120AABA1BD1BCD5000B2BC1 /* Model.xcdatamodeld in Sources */,
+				2120AB181BD20B2C000B2BC1 /* CurrencyRate+CoreDataProperties.swift in Sources */,
+				2120AB171BD20B2C000B2BC1 /* Configuration.swift in Sources */,
+				2120AAB11BD19FA0000B2BC1 /* APIHandler.swift in Sources */,
+				214D89FD1BCEF3890039C19F /* AppDelegate.swift in Sources */,
+				2120AAAB1BD192E4000B2BC1 /* Date.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		212802D01BF3E54C00FD108F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Charts;
+			targetProxy = 212802CF1BF3E54C00FD108F /* PBXContainerItemProxy */;
+		};
+		214A67471BFAABEB00B702B0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 214A673A1BFAABEB00B702B0 /* DolarYaWidget */;
+			targetProxy = 214A67461BFAABEB00B702B0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		214A67421BFAABEB00B702B0 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				214A67431BFAABEB00B702B0 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+		214D8A001BCEF3890039C19F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				214D8A011BCEF3890039C19F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		214A67491BFAABEB00B702B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = DolarYaWidget/DolarYaWidget.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = DolarYaWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cronista.mobile.dolarya.DolarYaWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		214A674A1BFAABEB00B702B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = DolarYaWidget/DolarYaWidget.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = DolarYaWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cronista.mobile.dolarya.DolarYaWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		214D8A141BCEF3890039C19F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Andrea Lopez Barrios (MJDBXR24U2)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "98f31dad-38ff-4c18-b835-e1d67f48992f";
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		214D8A151BCEF3890039C19F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Andrea Lopez Barrios (MJDBXR24U2)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "98f31dad-38ff-4c18-b835-e1d67f48992f";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		214D8A171BCEF3890039C19F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE2759CD9B45EBCC551477A0 /* Pods-DolarYa.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = dolarya/dolarya.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = dolarya/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cronista.mobile.dolarya;
+				PRODUCT_NAME = DolarYa;
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "dolarya-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		214D8A181BCEF3890039C19F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 643351A5A2FFA99F8BEC18AF /* Pods-DolarYa.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = dolarya/dolarya.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = dolarya/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cronista.mobile.dolarya;
+				PRODUCT_NAME = DolarYa;
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "dolarya-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		214A674C1BFAABEB00B702B0 /* Build configuration list for PBXNativeTarget "DolarYaWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				214A67491BFAABEB00B702B0 /* Debug */,
+				214A674A1BFAABEB00B702B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		214D89F21BCEF3890039C19F /* Build configuration list for PBXProject "DolarYa" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				214D8A141BCEF3890039C19F /* Debug */,
+				214D8A151BCEF3890039C19F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		214D8A161BCEF3890039C19F /* Build configuration list for PBXNativeTarget "DolarYa" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				214D8A171BCEF3890039C19F /* Debug */,
+				214D8A181BCEF3890039C19F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		2120AAB81BD1BCD5000B2BC1 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2120AAB91BD1BCD5000B2BC1 /* Model.xcdatamodel */,
+			);
+			currentVersion = 2120AAB91BD1BCD5000B2BC1 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 214D89EF1BCEF3890039C19F /* Project object */;
+}

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="M4Y-Lb-cyx">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Roboto-Black.ttf">
+            <string>Roboto-Black</string>
+        </mutableArray>
+        <mutableArray key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--Today View Controller-->
+        <scene sceneID="cwh-vc-ff4">
+            <objects>
+                <viewController id="M4Y-Lb-cyx" customClass="TodayViewController" customModule="DolarYaWidget" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ft6-oW-KC0"/>
+                        <viewControllerLayoutGuide type="bottom" id="FKl-LY-JtV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" simulatedAppContext="notificationCenter" id="S3S-Oj-5AN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="250"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a67-dj-jIg">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="250"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="whT-Mi-xNa"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="psu-X5-OCl" kind="embed" id="PS3-cW-Xyy"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="a67-dj-jIg" secondAttribute="trailing" constant="-16" id="K4R-Gi-kOx"/>
+                            <constraint firstItem="a67-dj-jIg" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leadingMargin" constant="-16" id="bUs-8f-tHV"/>
+                            <constraint firstItem="FKl-LY-JtV" firstAttribute="top" secondItem="a67-dj-jIg" secondAttribute="bottom" id="nD4-cf-Ugo"/>
+                            <constraint firstItem="a67-dj-jIg" firstAttribute="top" secondItem="Ft6-oW-KC0" secondAttribute="bottom" id="ooL-BW-vWn"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="250"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vXp-U4-Rya" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="363" y="182"/>
+        </scene>
+        <!--Widget View Controller-->
+        <scene sceneID="QE2-Bx-Oxe">
+            <objects>
+                <tableViewController id="psu-X5-OCl" customClass="WidgetViewController" customModule="DolarYaWidget" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="40" sectionHeaderHeight="20" sectionFooterHeight="20" id="nct-c3-Qwd">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="250"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="WidgetRow" id="GIV-TU-FBK" customClass="WidgetCustomCell" customModule="DolarYaWidget" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="20" width="320" height="40"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="GIV-TU-FBK" id="Kdo-su-w69">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="39"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$15.83 / $19.80" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RTv-1v-9t7" userLabel="Rate">
+                                            <rect key="frame" x="192" y="10" width="120" height="19"/>
+                                            <animations/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="120" id="wF2-C9-hyJ"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Roboto-Black" family="Roboto" pointSize="14"/>
+                                            <color key="textColor" red="0.3294117647" green="0.64705882349999999" blue="0.71372549019999998" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DOLAR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bBr-Jb-1qI" userLabel="Name">
+                                            <rect key="frame" x="13" y="10" width="45" height="19"/>
+                                            <animations/>
+                                            <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                                            <color key="textColor" red="0.3294117647" green="0.64705882349999999" blue="0.71372549019999998" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <animations/>
+                                    <constraints>
+                                        <constraint firstItem="bBr-Jb-1qI" firstAttribute="leading" secondItem="Kdo-su-w69" secondAttribute="leadingMargin" constant="5" id="Imi-9d-zBE"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="bBr-Jb-1qI" secondAttribute="bottom" constant="2" id="Mtg-8e-rhu"/>
+                                        <constraint firstItem="bBr-Jb-1qI" firstAttribute="top" secondItem="Kdo-su-w69" secondAttribute="topMargin" constant="2" id="Que-Zq-33w"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="RTv-1v-9t7" secondAttribute="trailing" id="Y9s-EG-Iho"/>
+                                        <constraint firstItem="RTv-1v-9t7" firstAttribute="centerY" secondItem="bBr-Jb-1qI" secondAttribute="centerY" id="muz-Zv-hyN"/>
+                                        <constraint firstItem="bBr-Jb-1qI" firstAttribute="centerY" secondItem="Kdo-su-w69" secondAttribute="centerY" id="oUA-ry-qLh"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <animations/>
+                                <connections>
+                                    <outlet property="Name" destination="bBr-Jb-1qI" id="7zt-Z7-b4t"/>
+                                    <outlet property="Rate" destination="RTv-1v-9t7" id="6oG-f1-tN0"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="psu-X5-OCl" id="yWh-NS-xsq"/>
+                            <outlet property="delegate" destination="psu-X5-OCl" id="0hb-Ft-wlT"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XpG-Uk-0W1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="920" y="227"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,19 @@
+﻿@model List<DolarYa.Business.DataObjects.CurrencyRateDTO>
+@{
+    var rate = Model.Single(x => x.Id == 1);
+    Layout = null;
+}
+
+    <!DOCTYPE html>
+
+    <html>
+    <head>
+        <meta name="viewport" content="width=device-width" />
+        <title>Cotizaciones</title>
+    </head>
+    <body>
+        <div>
+            <p>Dólar Oficial&nbsp;<strong>@rate.Venta.ToString("#.##")</strong></p>
+        </div>
+    </body>
+</html>

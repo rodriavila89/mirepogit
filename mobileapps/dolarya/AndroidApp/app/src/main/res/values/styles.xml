@@ -1,0 +1,22 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:actionBarStyle">@style/MyActionBar</item>
+        <item name="actionBarStyle">@style/MyActionBar</item>
+    </style>
+    <style name="MyActionBar"
+        parent="@style/Widget.AppCompat.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">@drawable/ab_background</item>
+        <item name="background">@drawable/ab_background</item>
+        <item name="android:displayOptions">homeAsUp</item>
+        <item name="displayOptions">homeAsUp</item>
+        <item name="android:homeAsUpIndicator">@drawable/ab_menu</item>
+        <item name="homeAsUpIndicator">@drawable/ab_menu</item>
+        <item name="android:icon">@drawable/ab_menu</item>
+        <item name="icon">@drawable/ab_menu</item>
+    </style>
+    <drawable name="switch_track_off">#cbe4e9</drawable>
+    <drawable name="switch_track_on">#366a75</drawable>
+</resources>

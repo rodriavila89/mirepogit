@@ -1,0 +1,259 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:spiritconsultingllc="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/relativeLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_list_item_bg"
+        android:paddingBottom="0dp"
+        android:paddingLeft="0dp"
+        android:paddingTop="0dp">
+
+        <RelativeLayout
+            android:id="@+id/item_share"
+            android:layout_width="wrap_content"
+            android:layout_height="85dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/custom_list_share_bg">
+
+            <FrameLayout
+                android:id="@+id/item_share_container"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="12dp"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/item_facebook_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="15dp"
+                        android:src="@drawable/facebook" />
+
+                    <ImageView
+                        android:id="@+id/item_twitter_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="15dp"
+                        android:src="@drawable/twitter" />
+
+                    <ImageView
+                        android:id="@+id/item_whatsapp_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/whatsapp" />
+
+                </LinearLayout>
+            </FrameLayout>
+
+            <ImageView
+                android:id="@+id/item_share_opener"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_toEndOf="@+id/item_share_container"
+                android:layout_toRightOf="@+id/item_share_container"
+                android:src="@drawable/little_bar_white" />
+
+        </RelativeLayout>
+
+
+        <com.cronista.dolarya.helpers.CustomTextView
+            android:id="@+id/item_currency_name"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="12dp"
+            android:layout_toEndOf="@+id/item_share"
+            android:layout_toRightOf="@+id/item_share"
+            android:text="DOLAR CDO C/LIQ"
+            android:gravity="start"
+            android:singleLine="true"
+            android:textColor="#366a75"
+            android:textSize="20sp"
+            spiritconsultingllc:customFont="Ubuntu-Light.ttf" />
+
+        <ImageView
+            android:id="@+id/item_percentage_change_caret"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/item_percentage_change_value"
+            android:layout_alignTop="@+id/item_percentage_change_value"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_toRightOf="@+id/item_currency_name"
+            android:layout_toEndOf="@+id/item_currency_name"
+            android:src="@drawable/caret_down" />
+
+        <com.cronista.dolarya.helpers.CustomTextView
+            android:id="@+id/item_percentage_change_value"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/item_buy"
+            android:layout_toRightOf="@+id/item_percentage_change_caret"
+            android:layout_toEndOf="@+id/item_percentage_change_caret"
+            android:gravity="end"
+            android:singleLine="true"
+            android:text="-1,3661"
+            android:textColor="#00bdad"
+            android:textSize="12sp"
+            spiritconsultingllc:customFont="Roboto-Black.ttf" />
+
+        <com.cronista.dolarya.helpers.CustomTextView
+            android:id="@+id/item_buy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/item_currency_name"
+            android:layout_alignStart="@+id/item_currency_name"
+            android:layout_below="@+id/item_currency_name"
+            android:layout_marginTop="25dp"
+            android:text="Compra"
+            android:textColor="#2a6478"
+            android:textSize="10sp"
+            spiritconsultingllc:customFont="Roboto-Light.ttf" />
+
+        <com.cronista.dolarya.helpers.CustomTextView
+            android:id="@+id/item_buy_value"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/item_buy"
+            android:layout_marginLeft="0dp"
+            android:layout_toEndOf="@+id/item_buy"
+            android:layout_toRightOf="@+id/item_buy"
+            android:gravity="end"
+            android:singleLine="true"
+            android:text="9,0600"
+            android:textColor="#00bdad"
+            android:textSize="16sp"
+            spiritconsultingllc:customFont="Roboto-Black.ttf" />
+
+        <com.cronista.dolarya.helpers.CustomTextView
+            android:id="@+id/item_sell"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/item_buy_value"
+            android:layout_marginLeft="100dp"
+            android:layout_marginStart="100dp"
+            android:layout_toEndOf="@+id/item_buy"
+            android:layout_toRightOf="@+id/item_buy"
+            android:gravity="end"
+            android:singleLine="true"
+            android:text="Venta"
+            android:textColor="#2a6478"
+            android:textSize="10sp"
+            spiritconsultingllc:customFont="Roboto-Light.ttf" />
+
+        <com.cronista.dolarya.helpers.CustomTextView
+            android:id="@+id/item_sell_value"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/item_sell"
+            android:layout_marginLeft="0dp"
+            android:layout_marginStart="24dp"
+            android:layout_toEndOf="@+id/item_sell"
+            android:layout_toRightOf="@+id/item_sell"
+            android:gravity="end"
+            android:singleLine="true"
+            android:text="9,1600"
+            android:textColor="#00bdad"
+            android:textSize="16sp"
+            spiritconsultingllc:customFont="Roboto-Black.ttf" />
+
+        <ImageButton
+            android:id="@+id/item_plus_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/item_percentage_change_value"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="7dp"
+            android:layout_toEndOf="@+id/item_percentage_change_value"
+            android:layout_toRightOf="@+id/item_percentage_change_value"
+            android:background="@android:color/transparent"
+            android:src="@drawable/expand_button"
+            android:scaleType="fitCenter" />
+
+        <FrameLayout
+            android:id="@+id/item_data_container"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/item_buy_value"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="50dp"
+            android:layout_toEndOf="@+id/item_share"
+            android:layout_toRightOf="@+id/item_share"
+            android:visibility="gone"></FrameLayout>
+
+        <RelativeLayout
+            android:id="@+id/item_data_buttons_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_data_container"
+            android:layout_marginBottom="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/item_share"
+            android:layout_toRightOf="@+id/item_share"
+            android:visibility="visible">
+
+            <com.cronista.dolarya.helpers.CustomTextView
+                android:id="@+id/item_week_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/custom_list_week_btn_bg"
+                android:paddingBottom="7dp"
+                android:paddingLeft="35dp"
+                android:paddingRight="35dp"
+                android:paddingTop="7dp"
+                android:singleLine="true"
+                android:text="5 Días"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:gravity="center"
+                spiritconsultingllc:customFont="Roboto-Light.ttf" />
+
+            <com.cronista.dolarya.helpers.CustomTextView
+                android:id="@+id/item_month_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_toEndOf="@+id/item_week_btn"
+                android:layout_toRightOf="@+id/item_week_btn"
+                android:background="@drawable/custom_list_month_btn_bg"
+                android:paddingBottom="7dp"
+                android:paddingLeft="35dp"
+                android:paddingRight="35dp"
+                android:paddingTop="7dp"
+                android:singleLine="true"
+                android:text="1 Mes"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:gravity="center"
+                spiritconsultingllc:customFont="Roboto-Light.ttf" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

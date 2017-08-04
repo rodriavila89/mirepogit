@@ -1,0 +1,4 @@
+Visual Studio >= 2013, se maneja todo por medio de NUGET por lo tanto cualquier librería extra (Azure Mobile Services por ej) la debería bajar automáticamente.
+Android Studio >= 1.5
+JDK 7
+XCode 7.2

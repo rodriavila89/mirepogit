@@ -1,0 +1,3 @@
+storePassword "DolarCronista!"
+keyAlias "ElCronistaDolarYa"
+keyPassword "bf6e1533-7631-4589-a9ac-65e1452523ac"
