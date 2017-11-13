@@ -1,0 +1,146 @@
+[
+	[
+		{
+			"cargo": "Diputados",
+			"candidato": "Lilita Carrió",
+			"partido": "Vamos Juntos",
+			"class": "cambiemos",
+			"path": "carrio",
+			"porcentaje": 0
+		},
+		{
+			"cargo": "Diputados",
+			"candidato": "Daniel Filmus",
+			"partido": "Unidad porteña",
+			"class": "ciudadana",
+			"path": "filmus",
+			"porcentaje": 0
+		},
+		{
+			"cargo": "Diputados",
+			"candidato": "MARTÍN LOUSTEAU",
+			"partido": "EVOLUCIÓN CIUDADANA",
+			"class": "evolucion",
+			"path": "lousteau",
+			"porcentaje": 0
+		},
+		{
+			"cargo": "Diputados",
+			"candidato": "MARCELO RAMAL",
+			"partido": "FIT",
+			"class": "fit",
+			"path": "ramal",
+			"porcentaje": 0
+		},
+		{
+			"cargo": "Diputados",
+			"candidato": "MATÍAS TOMBOLINI",
+			"partido": "1 País",
+			"class": "pais",
+			"path": "tombolini",
+			"porcentaje": 0
+		},
+		{
+			"cargo": "Diputados",
+			"candidato": "Luis Zamora",
+			"partido": "AyL",
+			"class": "ayl",
+			"path": "zamora",
+			"porcentaje": 3.69
+		}
+	],
+	[
+		{
+			"cargo": "Senadores",
+			"candidato": "Esteban Bullrich",
+			"partido": "Cambiemos",
+			"class": "cambiemos",
+			"path": "bullrich",
+			"porcentaje": 0
+		},
+		{
+			"cargo": "Senadores",
+			"candidato": "Cristina Kirchner",
+			"partido": "Unidad Ciudadana",
+			"class": "ciudadana",
+			"path": "kirchner",
+			"porcentaje": 0
+		},
+		{
+			"cargo": "Senadores",
+			"candidato": "Sergio Massa",
+			"partido": "1 País",
+			"class": "pais",
+			"path": "massa",
+			"porcentaje": 0
+		},
+		{
+			"cargo": "Senadores",
+			"candidato": "Florencio Randazzo",
+			"partido": "Frente Justicialista",
+			"class": "frente-justicialista",
+			"path": "randazzo",
+			"porcentaje": 0
+		},
+		{
+			"cargo": "Senadores",
+			"candidato": "Néstor Pitrola",
+			"partido": "FIT",
+			"class": "fit",
+			"path": "pitrola",
+			"porcentaje": 0
+		}
+	],
+	[
+		{
+			"cargo": "Diputados",
+			"candidato": "Graciela Ocaña",
+			"partido": "Cambiemos",
+			"class": "cambiemos",
+			"path": "ocana",
+			"porcentaje": 0
+		},
+		{
+			"cargo": "Diputados",
+			"candidato": "Fernanda Vallejos",
+			"partido": "Unidad Ciudadana",
+			"class": "ciudadana",
+			"path": "vallejos",
+			"porcentaje": 0
+		},
+		{
+			"cargo": "Diputados",
+			"candidato": "Felipe Solá",
+			"partido": "1 País",
+			"class": "pais",
+			"path": "sola",
+			"porcentaje": 0
+		},
+		{
+			"cargo": "Diputados",
+			"candidato": "Eduardo Bucca",
+			"partido": "Frente Justicialista",
+			"class": "frente-justicialista",
+			"path": "bucca",
+			"porcentaje": 0
+		},
+		{
+			"cargo": "Diputados",
+			"candidato": "Nicolás del Caño",
+			"partido": "FIT",
+			"class": "fit",
+			"path": "cano",
+			"porcentaje": 0
+		}
+	],
+	[
+		{
+			"mesasEscrutadas": "PROVINCIA",
+			"porcentaje": 76
+		},
+		{
+			"mesasEscrutadas": "CIUDAD",
+			"porcentaje": 88
+		}
+	]
+]

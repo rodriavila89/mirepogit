@@ -1,0 +1,217 @@
+
+body, ul,p,figure{margin:0px; padding:0px;}
+a{text-decoration:none;}
+select{outline:none;}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+@font-face {
+  font-family: 'Glyphicons Halflings';
+
+  src: url('../fonts/glyphicons-halflings-regular.eot');
+  src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff2') format('woff2'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+}
+.glyphicon:before {
+
+  font-family: 'Glyphicons Halflings';  
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.glyphicon-chevron-up:before {
+  content: "\e113";
+}
+.glyphicon-chevron-down:before {
+  content: "\e114";
+}
+.glyphicon-plus:before {
+  content: "\002b";
+}
+.glyphicon-euro:before,
+.glyphicon-eur:before {
+  content: "\20ac";
+}
+.glyphicon-minus:before {
+  content: "\2212";
+}
+
+.mod-elecciones{background-color:#fff;position:relative;}
+.mod-elecciones .mod-title {
+    font: normal 15px/18px 'Roboto Slab', sans-serif;
+    background-color: rgb(160, 160, 160);
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    padding: 4px;
+}
+.mod-elecciones .mod-title a{
+    color: #fff;
+    display: block;
+}
+.mod-elecciones .partido-graph .line-partido{text-align:left;position:relative;overflow: hidden;background-color: #f5f5f5;padding-bottom: 2px;}
+.mod-elecciones .partido-graph .line-partido:nth-child(2n){background-color: rgba(199, 199, 199, 0.42); padding:16px 12px 14px 12px;}
+.mod-elecciones .partido-graph .line-partido .graph-text, .mod-elecciones .partido-graph .line-partido .graph-number{display:block;text-transform:uppercase;font: normal 12px/12px 'Roboto Slab', sans-serif; color:#636363;}
+.mod-elecciones .partido-graph .line-partido .graph-text {
+    text-align: center;
+    margin-bottom: 5px;
+    padding: 3px 0;
+    font: normal 12px/12px 'Roboto Slab', sans-serif;
+    
+}
+.mod-elecciones .partido-graph .line-partido h2.graph-text{
+    color:#fff;
+}
+.mod-elecciones .partido-graph .line-partido .graph-number{margin-bottom:10px;text-align:center;float:left;}
+.mod-elecciones .percent-bar {box-sizing: border-box;background-color: #a0a0a0;float: left;max-width: 214px;min-width: 40px;text-align: center;transition: height .4s .1s;bottom: 14px;height: 14px;}
+.mod-elecciones .percent-bar .percent-text{font: 500 12px/13px 'Roboto Slab', sans-serif; color:#fff;display: inline-block;vertical-align: top;margin: 0 0 0 5px;}
+.mod-elecciones .content-bar {
+    width: 100%;
+    background-color: rgba(185, 185, 185, 0.88);
+    overflow: hidden;
+}
+.primarias-home h2{
+	margin: 0 auto;
+}
+.senadores, .diputados{
+    margin: 9px 0;
+}
+.mod-elecciones .partido-graph.cambiemos .line-partido h2.graph-text, 
+.mod-elecciones .partido-graph.cambiemos .line-partido .percent-bar{
+	background-color:#ffe94e;
+}
+.mod-elecciones .partido-graph.evolucion .line-partido h2.graph-text, 
+.mod-elecciones .partido-graph.evolucion .line-partido .percent-bar{
+    background-color:rgb(69, 187, 116);
+}
+.mod-elecciones .partido-graph.frente-justicialista .line-partido h2.graph-text, 
+.mod-elecciones .partido-graph.frente-justicialista .line-partido .percent-bar{
+    background-color:rgb(55, 139, 171);
+}
+.mod-elecciones .partido-graph.IzquierdaFrente .line-partido h2.graph-text, 
+.mod-elecciones .partido-graph.IzquierdaFrente .line-partido .percent-bar{
+    background-color:rgb(222, 70, 70);
+}
+.mod-elecciones .partido-graph.fit .line-partido h2.graph-text, 
+.mod-elecciones .partido-graph.fit .line-partido .percent-bar{
+    background-color:rgb(222, 117, 117);
+}
+.mod-elecciones .partido-graph.pais .line-partido h2.graph-text, 
+.mod-elecciones .partido-graph.pais .line-partido .percent-bar{
+    background-color: #1f8bfb;
+}
+.mod-elecciones .partido-graph.ciudadana .line-partido h2.graph-text, 
+.mod-elecciones .partido-graph.ciudadana .line-partido .percent-bar{
+    background-color: rgb(29, 158, 206);
+}
+.mod-elecciones .partido-graph.creo .line-partido h2.graph-text, 
+.mod-elecciones .partido-graph.creo .line-partido .percent-bar{
+    background-color: rgb(123, 177, 197);
+}
+.mod-elecciones .partido-graph.ayl .line-partido h2.graph-text, 
+.mod-elecciones .partido-graph.ayl .line-partido .percent-bar{
+    background-color: rgb(208, 143, 241);
+}
+.mod-elecciones .partido-graph.cambiemos .percent-bar .percent-text,
+.mod-elecciones .partido-graph.cambiemos .line-partido .graph-text {
+    color: #636363;
+}
+.primarias-home .mod-elecciones{
+    min-width: 300px;
+    background-color: #c1c1c1;
+    margin-bottom: 10px;
+}
+.primarias-home .select-interna{
+	margin-bottom: 14px;
+	background-color: #f7f7f7;
+   width: 100%;
+   font-size: 16px;
+   line-height: 1;
+   border: 0;
+   border-radius: 0;
+   -webkit-appearance: none;
+}
+.primarias-home .content-select-interna ul li {
+  cursor: default;
+}
+.primarias-home .content-select-interna{
+	max-width: 239px;
+    position: absolute;
+    width: 100%;
+	z-index:100;
+}
+.primarias-home .interna{
+	padding: 0 5px;
+}
+.primarias-home .interna .int-candidato{
+	overflow:hidden;
+}
+.primarias-home .interna .img-candidato{
+	border-radius:100%;
+}
+.primarias-home .ver-mas{
+	font: italic 16px/16px 'Roboto Slab', sans-serif;
+	color:#636363;
+}
+.primarias-home .int-candidato figure{
+	float: left;
+    margin-right: 4px;
+}
+.primarias-home .mod-elecciones .partido-graph .line-partido .interna .graph-text{margin-bottom:0px;font:normal 10px/12px 'Roboto Slab', sans-serif;background-color: transparent !important;text-align: left;}
+.primarias-home .mod-elecciones .partido-graph{margin:0px auto 5px auto;}
+
+.provincia .senadores .col-lg-3:nth-last-of-type(2),
+.provincia .senadores .col-lg-3:last-child,
+.provincia .diputados .col-lg-3:nth-last-of-type(2),
+.provincia .diputados .col-lg-3:last-child,
+.caba .diputados .col-lg-3:nth-last-of-type(2),
+.caba .diputados .col-lg-3:last-child
+{
+    display: none;
+}
+.accordion-toggle span{
+    float: right;
+}
+.partido-interna{
+    position: absolute;
+    width: 100%;
+    z-index: 100;
+    top: 50%;
+    margin-top: 34px;
+    left: 8%;
+    -webkit-box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.75);
+    display: none;
+}
+.mod-elecciones .partido-interna .partido-graph .line-partido {
+    background-color: #e0e0e0;
+}
+.primarias-home .mod-elecciones .partido-interna .partido-graph{
+    margin: 0px;
+}
+.title-interna{
+    margin: 6px 0;
+    font: normal 15px/12px 'Roboto Slab', sans-serif;
+    color: rgb(29, 158, 206);
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: underline;
+    cursor:pointer; 
+}
+.primarias-home .datos-candidatos{
+	float: left;
+    width: 72%;
+}
+@media (min-width: 992px){
+    .primarias-home .datos-candidatos {
+        width: 66%;
+    }
+}
+@media (max-width: 768px){
+
+    .primarias-home .datos-candidatos{
+        width: 70%;
+    }
+}
